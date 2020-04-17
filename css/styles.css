@@ -1,0 +1,275 @@
+:root {
+  --varRed: hsl(0, 100%, 68%);
+  --varVeryDarkBlue: hsl(230, 29%, 20%);
+  --varDarkGrayishBlue: hsl(230, 11%, 40%);
+  --varGrayishBlue: hsl(231, 7%, 65%);
+  --varLightGrayishBlue: hsl(207, 33%, 95%);
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Variables and Mixins */
+/* End Variables and Mixins */
+body {
+  line-height: 1;
+  font-size: 18px;
+}
+/****************TOP****************/
+.container {
+  width: 77%;
+  max-width: 1440px;
+  margin: auto;
+}
+hr {
+  border-style: dotted none none none;
+  border-width: 10px;
+  padding: 0;
+  margin: 0 1rem;
+  border-color: var(--varGrayishBlue);
+  width:4%;
+  display: inline-block;
+}
+#topBar {
+  overflow: hidden;
+}
+#topBar .container .navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+#topBar .container .navbar .logo {
+  margin-right: auto;
+}
+.links__container  {
+  width:40%;
+  align-items: center;
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#topBar .container .navbar .links__container a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: var(--varVeryDarkBlue);
+  display: inline-block;
+  font-size: 0.9rem;
+}
+#topBar .container .navbar .links__container a:hover{
+  text-decoration: underline;
+}
+.login {
+  color:var(--varGrayishBlue)!important;
+}
+.login:hover {
+  color:var(--varVeryDarkBlue)!important;
+}
+#topBar .right__design {
+  height: 50%;
+  width:50%;
+  background-color: var(--varLightGrayishBlue);
+  position: absolute;
+  top: 0;
+  right:0;
+  z-index: -1;
+  border-radius: 0 0 0 5rem;
+}
+#check {
+  display: none;
+}
+label #hamburger, label #cancel {
+  display: none;
+}
+/****************MIDDLE****************/
+#middle {
+  position: relative;
+  overflow: hidden;
+}
+#middle .container {
+  display: flex;
+  align-items: center;
+}
+#middle .container .text__container {
+  height: 100%;
+  width: 50%;
+}
+#middle .container .image__container {
+  width: 50%;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: var(--varVeryDarkBlue);
+  margin: 2rem 0;
+}
+h3 {
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--varDarkGrayishBlue);
+  letter-spacing: 5px;
+  font-size: 0.9rem;
+}
+span {
+  background-color: var(--varVeryDarkBlue);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  padding:2px 12px;
+  letter-spacing: normal;
+}
+p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+}
+.text__container a {
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: var(--varRed);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.text__container a:hover {
+  opacity: 0.8;
+}
+h2 {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--varDarkGrayishBlue);
+  letter-spacing: 5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
